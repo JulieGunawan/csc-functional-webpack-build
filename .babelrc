@@ -1,0 +1,23 @@
+//write down the presets for babel to use
+// with below, our code can transpile the modern javascript feature into a format that a browser can understand
+
+{
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ],
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+  }
